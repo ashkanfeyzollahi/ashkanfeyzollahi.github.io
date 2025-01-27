@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-h1 {
-    font-size: 30pt;
-}
-
-h2 {
-    margin-top: 40px;
-}
-
 h1, h2, h3,
 h4, h5, h6 {
     font-family: 'Merriweather';
@@ -24,42 +16,15 @@ p {
     font-family: 'Open Sans';
 }
 
-.container {
-    width: 500px;
-    padding: 10px;
-
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .footer p {
     color: #888;
 }
 
-.repository {
-    border-radius: 5px;
-    border: 1px #DDD solid;
-    padding: 20px;
-    margin: 5px;
-}
-
-.repository p {
-    margin: 0;
-}
-
-.repository p .star {
-    color: #ffbf00;
-}
-
-#profile-picture {
-    width: 100%;
-    height: auto;
-
-    border-radius: 100%;
-}
-
-@media only screen and (max-width: 500px) {
-    .container {
-        width: calc(100% - 20px);
-    }
+.text-truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-line;
 }

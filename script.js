@@ -10,10 +10,10 @@ fetch(pinned_repos_url)
     })
     .then(pinned_repos => {
         for (let repository of pinned_repos) {
-            $("#repositories").append(
-                '<div class="repository">' +
-                    `<p><i class="bi bi-book"></i> <a style="margin-left: 5px;" href="https://github.com/${repository.author}/${repository.name}">${repository.author}/${repository.name}</a></p>` +
-                    `<p style="font-size: 10pt; margin-top: 5px;">${repository.description}</p>` +
+            $("#projects").append(
+                '<div class="repository border p-3 m-2 rounded-2">' +
+                    `<p class="m-0"><i class="bi bi-book"></i> <a style="margin-left: 5px;" href="https://github.com/${repository.author}/${repository.name}">${repository.author}/${repository.name}</a></p>` +
+                    `<p class="m-0 text-truncate" style="font-size: 10pt; margin-top: 5px;">${repository.description}</p>` +
                 '</div>'
             );
         }

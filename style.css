@@ -35,8 +35,7 @@ h4, h5, h6 {
 }
 
 a {
-    text-decoration: none;
-    color: rgb(28, 80, 211);
+    text-decoration: none !important;
     font-family: 'Open Sans';
 }
 
@@ -56,4 +55,20 @@ p {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: pre-line;
+}
+
+.repo {
+    background-color: #41455f !important;
+}
+
+.repo * {
+    background-color: #41455f !important;
+}
+
+.star {
+    color: #e5c890 !important;
+}
+
+.language {
+    color: var(--subtext-color) !important;
 }

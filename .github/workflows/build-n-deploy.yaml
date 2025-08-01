@@ -1,0 +1,13 @@
+on: push
+
+jobs:
+    build-n-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Build and Deploy
+              run: |
+                  git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+                  npm run build
+                  npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

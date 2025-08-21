@@ -82,7 +82,7 @@ export default function AnimatedHeader() {
                         </HStack>
                         <Center>
                             <Box marginTop="10px">
-                                <Link href="https://github.com/ashkanfeyzollahi/ashkanfeyzollahi@gmail.com">
+                                <Link href="https://github.com/ashkanfeyzollahi/ashkanfeyzollahi.github.com">
                                     View on GitHub <LuExternalLink />
                                 </Link>
                                 &nbsp; &sdot; &nbsp;

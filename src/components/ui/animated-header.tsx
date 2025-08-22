@@ -84,7 +84,7 @@ export default function AnimatedHeader() {
                         </Center>
                         <Center>
                             <Box marginTop="10px">
-                                <Link href="https://github.com/ashkanfeyzollahi/ashkanfeyzollahi.github.com">
+                                <Link href="https://github.com/ashkanfeyzollahi/ashkanfeyzollahi.github.io">
                                     View on GitHub <LuExternalLink />
                                 </Link>
                                 &nbsp; &sdot; &nbsp;

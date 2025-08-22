@@ -57,29 +57,31 @@ export default function AnimatedHeader() {
                     <Box zIndex={100} spaceY="15px" justifyItems="center">
                         <HStack>
                             A portfolio webpage for
-                            <Avatar.Root height="30px" width="60px">
+                            <Avatar.Root height="30px" width="30px">
                                 <Avatar.Fallback name="Ashkan Feyzollahi" />
                                 <Avatar.Image src="https://avatars.githubusercontent.com/u/136630721?v=4" />
                             </Avatar.Root>
                             made using:
                         </HStack>
-                        <HStack>
-                            <Icon id="si-chakraui" size="2xl">
-                                <SiChakraui></SiChakraui>
-                            </Icon>
-                            <Text>+</Text>
-                            <Icon id="si-react" size="2xl">
-                                <SiReact></SiReact>
-                            </Icon>
-                            <Text>+</Text>
-                            <Icon id="si-typescript" size="2xl">
-                                <SiTypescript></SiTypescript>
-                            </Icon>
-                            <Text>+</Text>
-                            <Icon id="si-vite" size="2xl">
-                                <SiVite></SiVite>
-                            </Icon>
-                        </HStack>
+                        <Center>
+                            <HStack>
+                                <Icon id="si-chakraui" size="2xl">
+                                    <SiChakraui></SiChakraui>
+                                </Icon>
+                                <Text>+</Text>
+                                <Icon id="si-react" size="2xl">
+                                    <SiReact></SiReact>
+                                </Icon>
+                                <Text>+</Text>
+                                <Icon id="si-typescript" size="2xl">
+                                    <SiTypescript></SiTypescript>
+                                </Icon>
+                                <Text>+</Text>
+                                <Icon id="si-vite" size="2xl">
+                                    <SiVite></SiVite>
+                                </Icon>
+                            </HStack>
+                        </Center>
                         <Center>
                             <Box marginTop="10px">
                                 <Link href="https://github.com/ashkanfeyzollahi/ashkanfeyzollahi.github.com">

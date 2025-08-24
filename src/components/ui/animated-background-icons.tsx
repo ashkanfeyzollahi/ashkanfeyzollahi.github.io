@@ -1,6 +1,6 @@
 import { Icon, Span } from "@chakra-ui/react";
 import { animate, utils } from "animejs";
-import { ReactNode, useEffect } from "react";
+import { useEffect } from "react";
 import {
     SiBootstrap,
     SiC,
@@ -39,7 +39,7 @@ import {
     SiVuedotjs,
 } from "react-icons/si";
 
-export default function AnimatedIcons(): ReactNode {
+export default function AnimatedBackgroundIcons(): React.JSX.Element {
     useEffect(() => {
         utils.set(".si", {
             left: () => utils.random(7.5, 90, 2) + "vw",

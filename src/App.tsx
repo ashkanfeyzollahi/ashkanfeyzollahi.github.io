@@ -3,7 +3,7 @@ import ContactMe from "@/components/ui/contact-me";
 import Education from "@/components/ui/education";
 import Footer from "@/components/ui/footer";
 import Header from "@/components/ui/header";
-import Projects from "@/components/ui/projects";
+import Portfolios from "@/components/ui/portfolios";
 
 import { Box, Center } from "@chakra-ui/react";
 
@@ -15,7 +15,7 @@ function App() {
                 <Box maxWidth="lg">
                     <AboutMe />
                     <Education />
-                    <Projects />
+                    <Portfolios />
                     <ContactMe />
                 </Box>
             </Center>

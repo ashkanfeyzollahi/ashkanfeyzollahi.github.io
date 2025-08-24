@@ -19,7 +19,7 @@ interface Project {
     html_url: string;
 }
 
-export default function Projects(): React.JSX.Element {
+export default function Portfolios(): React.JSX.Element {
     const projects: React.RefObject<Array<Project>> = useRef([]);
     const [isLoading, setIsLoading] = useState(true);
 

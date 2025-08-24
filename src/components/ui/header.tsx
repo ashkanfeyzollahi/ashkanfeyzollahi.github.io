@@ -1,4 +1,4 @@
-import AnimatedIcons from "./animated-icons";
+import AnimatedBackgroundIcons from "./animated-background-icons";
 import { ColorModeButton } from "./color-mode";
 import {
     Avatar,
@@ -12,9 +12,10 @@ import {
 import { createDraggable, createScope, createSpring, Scope } from "animejs";
 import { useEffect, useRef } from "react";
 import { LuExternalLink } from "react-icons/lu";
+import { PiArrowDown } from "react-icons/pi";
 import { SiChakraui, SiReact, SiTypescript, SiVite } from "react-icons/si";
 
-export default function AnimatedHeader() {
+export default function Header(): React.JSX.Element {
     const root = useRef(null);
     const scope = useRef(new Scope());
 
@@ -46,23 +47,21 @@ export default function AnimatedHeader() {
 
     return (
         <>
-            <AnimatedIcons></AnimatedIcons>
-            <ColorModeButton
-                position="fixed"
-                top="10px"
-                right="10px"
-            ></ColorModeButton>
+            <AnimatedBackgroundIcons />
+            <ColorModeButton position="fixed" top="10px" right="10px" />
             <Box ref={root}>
-                <Center paddingTop="70px">
-                    <Box zIndex={100} spaceY="15px" justifyItems="center">
-                        <HStack>
-                            A portfolio webpage for
-                            <Avatar.Root height="30px" width="30px">
-                                <Avatar.Fallback name="Ashkan Feyzollahi" />
-                                <Avatar.Image src="https://avatars.githubusercontent.com/u/136630721?v=4" />
-                            </Avatar.Root>
-                            made using:
-                        </HStack>
+                <Center height="100vh" spaceY="15px" justifyItems="center">
+                    <Box spaceY="15px">
+                        <Center>
+                            <HStack>
+                                A portfolio webpage for
+                                <Avatar.Root height="30px" width="30px">
+                                    <Avatar.Fallback name="Ashkan Feyzollahi" />
+                                    <Avatar.Image src="https://avatars.githubusercontent.com/u/136630721?v=4" />
+                                </Avatar.Root>
+                                made using:
+                            </HStack>
+                        </Center>
                         <Center>
                             <HStack>
                                 <Icon id="si-chakraui" size="2xl">
@@ -92,6 +91,16 @@ export default function AnimatedHeader() {
                                     Contact me <LuExternalLink />
                                 </Link>
                             </Box>
+                        </Center>
+                        <Center
+                            left="0"
+                            position="absolute"
+                            top="90vh"
+                            width="100vw"
+                        >
+                            <Icon size="lg">
+                                <PiArrowDown />
+                            </Icon>
                         </Center>
                     </Box>
                 </Center>
